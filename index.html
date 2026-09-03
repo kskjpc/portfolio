@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="웹퍼블리셔 원현경 포트폴리오 — 반응형 웹, 인터랙션, 브랜드 랜딩페이지" />
+  <title>WON HYUNGYEONG — WEB PUBLISHER PORTFOLIO</title>
+
+  <!-- Fonts : Pretendard (KR) / Archivo (EN) -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css?v=5" />
+</head>
+<body id="top">
+
+  <!-- ===== Scroll Progress ===== -->
+  <div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#top" class="header__logo" aria-label="맨 위로 이동">
+        WHG<span class="header__logo-dot">.</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="주요 메뉴">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#hero"    class="nav__link is-active" data-nav="hero">HOME</a></li>
+          <li class="nav__item"><a href="#about"   class="nav__link" data-nav="about">ABOUT</a></li>
+          <li class="nav__item"><a href="#career"  class="nav__link" data-nav="career">CAREER</a></li>
+          <li class="nav__item"><a href="#project" class="nav__link" data-nav="project">PROJECT</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link" data-nav="contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="header__toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow reveal">PORTFOLIO · 2026</p>
+
+        <h1 class="hero__title">
+          <span class="hero__title-line reveal" data-delay="1">WEB</span>
+          <span class="hero__title-line hero__title-line--outline reveal" data-delay="2">PUBLISHER</span>
+        </h1>
+
+        <p class="hero__desc reveal" data-delay="3">
+          이야기를 어떻게 전달할지 고민하던 마케터에서,<br class="br-m" />
+          그 이야기가 놓일 <strong>화면을 직접 짓는 웹퍼블리셔</strong>로.<br />
+          시맨틱 마크업과 반응형 레이아웃, 끊김 없는 인터랙션으로 브랜드의 화면을 만듭니다.
+        </p>
+
+        <div class="hero__tags reveal" data-delay="4">
+          <span class="hero__tag">HTML5</span>
+          <span class="hero__tag">CSS3</span>
+          <span class="hero__tag">JAVASCRIPT</span>
+          <span class="hero__tag">JQUERY</span>
+          <span class="hero__tag">RESPONSIVE</span>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="아래로 스크롤">
+        <span class="hero__scroll-label">SCROLL</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section" id="about">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">ABOUT</p>
+          <h2 class="section__title">채널 하나를 처음부터 끝까지,<br />이제는 화면 하나를 처음부터 끝까지.</h2>
+        </header>
+
+        <div class="about__body">
+          <!-- Photo -->
+          <figure class="about__photo reveal">
+            <div class="about__photo-frame">
+              <img src="images/profile.png" alt="원현경 프로필 사진" class="about__photo-img"
+                   onerror="this.classList.add('is-hidden')" />
+              <span class="about__photo-placeholder" aria-hidden="true">PHOTO</span>
+            </div>
+            <figcaption class="about__photo-caption">WON HYUNGYEONG · SEOUL</figcaption>
+          </figure>
+
+          <!-- Text -->
+          <div class="about__text">
+            <p class="about__para reveal">
+              비영리법인에서 회계로 사회생활을 시작해, 디자인 역량을 인정받아 홍보물 제작을 맡았고,
+              2020년부터는 4인 규모 법인의 온라인 홍보를 <strong>혼자 전담</strong>했습니다.
+              카카오채널 기획·제작·발송, Wix 홈페이지 리뉴얼, 목적별 영상 제작까지 —
+              채널 운영의 A부터 Z를 책임지며 <strong>전체 그림을 보는 눈</strong>을 길렀습니다.
+            </p>
+            <p class="about__para reveal">
+              콘텐츠를 만들수록 그것이 놓이는 <strong>화면 자체</strong>를 만들고 싶어졌습니다.
+              낯선 일도 스스로 파고들어 끝까지 완결 짓는 실행력으로 HTML·CSS·JavaScript를 학습했고,
+              감정 큐레이션 서비스부터 커머스 랜딩, 예약형 통합 플래너 데모까지 네 개의 반응형 프로젝트를 완성했습니다.
+              매뉴얼이 없는 상황에서도 방법을 찾아 결과를 만드는 것, 그것이 제 방식입니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="about__skills">
+          <h3 class="about__skills-title reveal">SKILLS</h3>
+          <div class="skills">
+            <div class="skills__group reveal">
+              <p class="skills__label">MARKUP &amp; STYLE</p>
+              <ul class="skills__list">
+                <li class="skills__item">
+                  <span class="skills__icon"><img src="images/icons/html5.svg" alt="" class="skills__icon-img" /></span>
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">HTML5</strong>
+                    <span class="skills__item-desc">시맨틱 태그 · 웹 표준 · 웹 접근성</span>
+                  </span>
+                </li>
+                <li class="skills__item">
+                  <span class="skills__icon"><img src="images/icons/css3.svg" alt="" class="skills__icon-img" /></span>
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">CSS3</strong>
+                    <span class="skills__item-desc">Flexbox · Grid · 미디어쿼리 · 반응형</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="skills__group reveal">
+              <p class="skills__label">SCRIPT</p>
+              <ul class="skills__list">
+                <li class="skills__item">
+                  <span class="skills__icon"><img src="images/icons/javascript.svg" alt="" class="skills__icon-img" /></span>
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">JavaScript</strong>
+                    <span class="skills__item-desc">DOM · 이벤트 · 비동기</span>
+                  </span>
+                </li>
+                <li class="skills__item">
+                  <span class="skills__icon"><img src="images/icons/jquery.svg" alt="" class="skills__icon-img" /></span>
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">jQuery</strong>
+                    <span class="skills__item-desc">동적 UI · 슬라이더 · 애니메이션</span>
+                  </span>
+                </li>
+                <li class="skills__item">
+                  <span class="skills__icon"><img src="images/icons/react.svg" alt="" class="skills__icon-img" /></span>
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">React</strong>
+                    <span class="skills__item-desc">컴포넌트 · useState 기초</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="skills__group reveal">
+              <p class="skills__label">DESIGN TOOL</p>
+              <ul class="skills__list">
+                <li class="skills__item">
+                  <span class="skills__icon"><img src="images/icons/photoshop.svg" alt="" class="skills__icon-img" /></span>
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">Photoshop</strong>
+                    <span class="skills__item-desc">보정 · 합성 · 웹 최적화</span>
+                  </span>
+                </li>
+                <li class="skills__item">
+                  <span class="skills__icon"><img src="images/icons/illustrator.svg" alt="" class="skills__icon-img" /></span>
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">Illustrator</strong>
+                    <span class="skills__item-desc">벡터 · UI 에셋</span>
+                  </span>
+                </li>
+                <li class="skills__item">
+                  <span class="skills__icon"><img src="images/icons/premiere.svg" alt="" class="skills__icon-img" /></span>
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">Premiere</strong>
+                    <span class="skills__item-desc">컷 편집 · 자막 · 색보정</span>
+                  </span>
+                </li>
+                <li class="skills__item">
+                  <span class="skills__icon"><img src="images/icons/figma.svg" alt="" class="skills__icon-img" /></span>
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">Figma</strong>
+                    <span class="skills__item-desc">와이어프레임 · 시안 · 협업</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="skills__group reveal">
+              <p class="skills__label">ETC</p>
+              <ul class="skills__list">
+                <li class="skills__item">
+                  <span class="skills__icon"><img src="images/icons/git.svg" alt="" class="skills__icon-img" /></span>
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">Git</strong>
+                    <span class="skills__item-desc">버전 관리</span>
+                  </span>
+                </li>
+                <li class="skills__item">
+                  <span class="skills__icon"><img src="images/icons/github.svg" alt="" class="skills__icon-img" /></span>
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">GitHub</strong>
+                    <span class="skills__item-desc">협업 · 이슈 관리</span>
+                  </span>
+                </li>
+                <li class="skills__item">
+                  <span class="skills__icon"><img src="images/icons/wix.svg" alt="" class="skills__icon-img" /></span>
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">Wix</strong>
+                    <span class="skills__item-desc">사이트 제작 · 운영</span>
+                  </span>
+                </li>
+                <li class="skills__item skills__item--noicon">
+                  <span class="skills__item-body">
+                    <strong class="skills__item-name">채널 운영</strong>
+                    <span class="skills__item-desc">카피라이팅 · 보도자료 · 채널 운영</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CAREER ===== -->
+    <section class="career section section--tint" id="career">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">CAREER</p>
+          <h2 class="section__title">일해온 시간이 곧 태도입니다.</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <p class="timeline__period">2020.12 — 2026.01</p>
+            <div class="timeline__body">
+              <h3 class="timeline__company">이랜드 아시안미션 <span class="timeline__dept">홍보팀</span></h3>
+              <ul class="timeline__tasks">
+                <li class="timeline__task">법인 온라인 홍보 전담 — 보도자료 작성, 기자단 관리, 대외 커뮤니케이션</li>
+                <li class="timeline__task">카카오채널 월 2회 정기 발송 — 썸네일 디자인·카피·발송 전 과정 단독 운영</li>
+                <li class="timeline__task">법인 홈페이지 리뉴얼 집행 및 법인 소개·후원 독려·이주민 이야기 영상 제작</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <p class="timeline__period">2020.09 — 2020.12</p>
+            <div class="timeline__body">
+              <h3 class="timeline__company">아동복지실천회 세움 <span class="timeline__dept">사업부 · 서울형 뉴딜일자리</span></h3>
+              <ul class="timeline__tasks">
+                <li class="timeline__task">사무·행정 지원</li>
+                <li class="timeline__task">단체 행사(바자회) 포스터 디자인 제작</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <p class="timeline__period">2015.01 — 2019.12</p>
+            <div class="timeline__body">
+              <h3 class="timeline__company">사단법인 E.S.F <span class="timeline__dept">재정부</span></h3>
+              <ul class="timeline__tasks">
+                <li class="timeline__task">비영리법인 회계 — 수입·지출 정리, 월/연 재정보고, 감사 준비</li>
+                <li class="timeline__task">정책 변경에 따른 소득신고 실무 대응 — 현장직 72명 홈택스 신고 지원</li>
+                <li class="timeline__task">주요 행사·사업 영상편집 병행</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+
+        <div class="career__edu reveal">
+          <p class="career__edu-label">EDUCATION &amp; LICENSE</p>
+          <ul class="career__edu-list">
+            <li class="career__edu-item">나사렛대학교 방송미디어학 (2011 — 2015)</li>
+            <li class="career__edu-item">JLPT 2급 (2019)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECT ===== -->
+    <section class="projects section" id="project">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">PROJECT</p>
+          <h2 class="section__title">기획부터 퍼블리싱까지, 네 개의 화면.</h2>
+        </header>
+
+        <div class="projects__grid">
+
+          <!-- 01 별빛도서관 -->
+          <article class="project-card reveal">
+            <a href="detail-library.html" class="project-card__mockup project-card__mockup--library" aria-label="별빛도서관 상세 페이지 보기">
+              <div class="mockup">
+                <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="mockup__screen">
+                  <img src="images/detail-library-hero-light.jpg" alt="별빛도서관 웹사이트 목업" class="mockup__img"
+                       onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="mockup__placeholder" aria-hidden="true">별빛도서관 웹사이트 목업</span>
+                  <span class="mockup__hint" aria-hidden="true">VIEW DETAIL</span>
+                </div>
+              </div>
+            </a>
+            <div class="project-card__info">
+              <p class="project-card__type">WEB SERVICE · RESPONSIVE</p>
+              <h3 class="project-card__name">별빛도서관</h3>
+              <p class="project-card__desc">
+                감정을 선택하면 그에 맞는 책을 추천하는 감정 기반 도서 큐레이션 서비스.
+                도서 검색과 대출 조회, 다크모드 스타일링을 갖춘 반응형 도서관 웹.
+              </p>
+              <ul class="project-card__stack">
+                <li>HTML</li><li>CSS</li><li>JQUERY</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="detail-library.html" class="btn btn--ghost" aria-label="별빛도서관 상세 페이지 보기">DETAIL</a>
+                <a href="https://kskjpc.github.io/library-uxui/" class="btn btn--fill" target="_blank" rel="noopener" aria-label="별빛도서관 실제 웹사이트 보기">WEB ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 LUMÉ -->
+          <article class="project-card reveal">
+            <a href="detail-lume.html" class="project-card__mockup project-card__mockup--lume" aria-label="LUMÉ 상세 페이지 보기">
+              <div class="mockup">
+                <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="mockup__screen">
+                  <img src="images/detail-lume-full.jpg" alt="LUMÉ 브랜드 랜딩페이지 목업" class="mockup__img"
+                       onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="mockup__placeholder" aria-hidden="true">LUMÉ 브랜드 랜딩페이지 목업</span>
+                  <span class="mockup__hint" aria-hidden="true">VIEW DETAIL</span>
+                </div>
+              </div>
+            </a>
+            <div class="project-card__info">
+              <p class="project-card__type">BRAND LANDING · COMMERCE</p>
+              <h3 class="project-card__name">LUMÉ — Memory Fragrance</h3>
+              <p class="project-card__desc">
+                기억을 향기로 기록하는 가상 럭셔리 향수 브랜드 랜딩페이지.
+                스크롤 인터랙션과 IntersectionObserver, 제품 중심 레이아웃 구현.
+              </p>
+              <ul class="project-card__stack">
+                <li>HTML</li><li>CSS</li><li>JAVASCRIPT</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="detail-lume.html" class="btn btn--ghost" aria-label="LUMÉ 상세 페이지 보기">DETAIL</a>
+                <a href="https://kskjpc.github.io/lume-uxui/" class="btn btn--fill" target="_blank" rel="noopener" aria-label="LUMÉ 실제 웹사이트 보기">WEB ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 BEBE DE PINO -->
+          <article class="project-card reveal">
+            <a href="detail-bebe.html" class="project-card__mockup project-card__mockup--bebe" aria-label="BEBE DE PINO 상세 페이지 보기">
+              <div class="mockup">
+                <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="mockup__screen">
+                  <img src="images/detail-bebe-full.jpg" alt="BEBE DE PINO 커머스 페이지 목업" class="mockup__img"
+                       onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="mockup__placeholder" aria-hidden="true">BEBE DE PINO 커머스 페이지 목업</span>
+                  <span class="mockup__hint" aria-hidden="true">VIEW DETAIL</span>
+                </div>
+              </div>
+            </a>
+            <div class="project-card__info">
+              <p class="project-card__type">COMMERCE LANDING · RESPONSIVE</p>
+              <h3 class="project-card__name">BEBE DE PINO</h3>
+              <p class="project-card__desc">
+                유아동복 브랜드 커머스형 랜딩. 영상 히어로, 무한 루프 슬라이더,
+                NEW/BEST 탭 전환 그리드, 좋아요·장바구니 마이크로 인터랙션 구현.
+              </p>
+              <ul class="project-card__stack">
+                <li>HTML</li><li>CSS</li><li>JAVASCRIPT</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="detail-bebe.html" class="btn btn--ghost" aria-label="BEBE DE PINO 상세 페이지 보기">DETAIL</a>
+                <a href="https://oneeonec102030-dotcom.github.io/bebedepino/" class="btn btn--fill" target="_blank" rel="noopener" aria-label="BEBE DE PINO 실제 웹사이트 보기">WEB ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 온홋카이도 -->
+          <article class="project-card reveal">
+            <a href="detail-hokkaido.html" class="project-card__mockup project-card__mockup--hokkaido" aria-label="온홋카이도 상세 페이지 보기">
+              <div class="mockup">
+                <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="mockup__screen">
+                  <img src="images/detail-hokkaido-full.jpg" alt="온홋카이도 여행 플래너 목업" class="mockup__img"
+                       onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="mockup__placeholder" aria-hidden="true">온홋카이도 여행 플래너 목업</span>
+                  <span class="mockup__hint" aria-hidden="true">VIEW DETAIL</span>
+                </div>
+              </div>
+            </a>
+            <div class="project-card__info">
+              <p class="project-card__type">TRAVEL PLATFORM · BOOKING FLOW</p>
+              <h3 class="project-card__name">온홋카이도</h3>
+              <p class="project-card__desc">
+                숙소·교통·액티비티를 하나로 묶는 여행 예약 통합 플래너.
+                14개 페이지 · localStorage 기반 상태 공유, 규칙 기반 추천, 4단계 결제 퍼널 구현.
+              </p>
+              <ul class="project-card__stack">
+                <li>HTML</li><li>CSS</li><li>JAVASCRIPT</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="detail-hokkaido.html" class="btn btn--ghost" aria-label="온홋카이도 상세 페이지 보기">DETAIL</a>
+                <a href="https://oneeonec102030-dotcom.github.io/hokkaido-uxui/" class="btn btn--fill" target="_blank" rel="noopener" aria-label="온홋카이도 실제 웹사이트 보기">WEB ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section section--dark" id="contact">
+      <div class="section__inner">
+        <p class="section__eyebrow section__eyebrow--light reveal">CONTACT</p>
+        <h2 class="contact__title reveal">
+          LET'S BUILD<br />
+          <span class="contact__title-point">THE NEXT SCREEN</span>
+        </h2>
+        <p class="contact__desc reveal">
+          새로운 채널을 겁내지 않고 시도해 온 것처럼, 새로운 화면도 끝까지 완성합니다.<br />
+          함께할 프로젝트가 있다면 편하게 연락해 주세요.
+        </p>
+
+        <ul class="contact__list reveal">
+          <li class="contact__item">
+            <span class="contact__label">EMAIL</span>
+            <a href="mailto:kskjpc@gmail.com" class="contact__value">kskjpc@gmail.com</a>
+          </li>
+          <li class="contact__item">
+            <span class="contact__label">PHONE</span>
+            <a href="tel:01044788393" class="contact__value">010. 4478. 8393</a>
+          </li>
+          <li class="contact__item">
+            <span class="contact__label">LOCATION</span>
+            <span class="contact__value">Seoul, Korea</span>
+          </li>
+        </ul>
+
+        <a href="mailto:kskjpc@gmail.com" class="btn btn--point reveal">SEND MAIL ↗</a>
+      </div>
+
+      <footer class="footer">
+        <p class="footer__copy">© 2026 WON HYUNGYEONG. Designed &amp; Published by myself.</p>
+        <a href="#top" class="footer__top" aria-label="맨 위로 이동">TOP ↑</a>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- ===== PROJECT DETAIL MODAL (iframe) =====
+       프로젝트 카드의 DETAIL 버튼/썸네일을 누르면 새 창/새 탭 대신
+       이 모달 안에 detail-*.html을 iframe으로 띄운다.
+       닫으면 프로젝트 목록으로 그대로 돌아오고, 모달 안에서 이전/다음
+       프로젝트로 넘나들거나 detail 페이지 내 메뉴로 부모 페이지의
+       해당 섹션까지 스크롤할 수 있다 (js/script.js 참고). -->
+  <div class="project-modal" id="projectModal" aria-hidden="true">
+    <div class="project-modal__backdrop" data-modal-close></div>
+    <div class="project-modal__frame-wrap">
+      <div class="project-modal__panel" role="dialog" aria-modal="true" aria-label="프로젝트 상세 보기">
+        <iframe class="project-modal__frame" id="projectModalFrame" title="프로젝트 상세 페이지"></iframe>
+      </div>
+      <button type="button" class="project-modal__close" id="projectModalClose" aria-label="닫고 프로젝트 목록으로 돌아가기">
+        ✕
+      </button>
+    </div>
+  </div>
+
+  <script src="js/script.js?v=5"></script>
+</body>
+</html>

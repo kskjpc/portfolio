@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="온홋카이도 — 여행 예약 통합 플래너 프로젝트 상세" />
+  <title>온홋카이도 — PROJECT DETAIL | WON HYUNGYEONG</title>
+
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css?v=5" />
+  <link rel="stylesheet" href="css/detail.css?v=5" />
+
+  <!-- 이 프로젝트의 실제 브랜드 컬러(코드 분석 리포트 기준)를 페이지 포인트 컬러로 사용 -->
+  <style>
+    :root {
+      --project-accent: #378ADD;
+      --project-accent-deep: #0C447C;
+      --project-tint: #E6F1FB;
+    }
+  </style>
+</head>
+<body id="top" class="page-detail">
+
+  <div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+  <header class="header page-detail-header" id="header">
+    <div class="header__inner">
+      <div class="detail-header-nav" aria-label="이전/다음 프로젝트">
+        <a href="detail-bebe.html" class="detail-header-nav__link detail-header-nav__link--prev" aria-label="이전 프로젝트: BEBE DE PINO">
+          <span class="detail-header-nav__dir">← PREV</span>
+          <span class="detail-header-nav__name">BEBE DE PINO</span>
+        </a>
+        <a href="index.html#project" class="detail-header-nav__all" aria-label="전체 프로젝트 목록"><span class="detail-header-nav__all-full">ALL PROJECTS</span><span class="detail-header-nav__all-short">ALL</span></a>
+        <a href="detail-library.html" class="detail-header-nav__link detail-header-nav__link--next" aria-label="다음 프로젝트: 별빛도서관">
+          <span class="detail-header-nav__dir">NEXT →</span>
+          <span class="detail-header-nav__name">별빛도서관</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- ===== DETAIL HERO ===== -->
+    <section class="detail-hero" id="hero" style="background: linear-gradient(180deg, var(--project-tint) 0%, var(--color-bg) 100%);">
+      <div class="section__inner">
+
+    <div class="detail-hero__top">
+      <div class="detail-hero__intro">
+        <p class="detail-hero__eyebrow reveal" data-delay="1">PROJECT 04 — 여행 예약 통합 플래너 데모</p>
+        <h1 class="detail-hero__title reveal" data-delay="2">온홋카이도</h1>
+        <p class="detail-hero__sub reveal" data-delay="3">
+          숙소·교통·액티비티를 하나의 플래너로 묶는 14개 페이지 구성의 여행 예약 통합 플랫폼 데모.<br />
+          "복잡한 조율은 시스템이 대신 판단한다"는 콘셉트로, 랜딩의 조건 검색부터
+          상품 탐색, 통합 장바구니, 4단계 결제까지 이어지는 여행 예약 흐름
+          전체를 프론트엔드로 구현했습니다.
+        </p>
+      </div>
+
+      <a href="https://oneeonec102030-dotcom.github.io/hokkaido-uxui/" target="_blank" rel="noopener"
+         class="detail-hero__preview project-card__mockup project-card__mockup--hokkaido reveal" data-delay="3"
+         aria-label="온홋카이도 실제 사이트 미리보기">
+        <div class="mockup">
+          <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="mockup__screen">
+            <img src="images/detail-hokkaido-full.jpg" alt="온홋카이도 웹사이트 미리보기" class="mockup__img"
+                 onload="this.nextElementSibling.classList.add('is-hidden')"
+                 onerror="this.classList.add('is-hidden')" />
+            <span class="mockup__placeholder" aria-hidden="true">온홋카이도 웹사이트 미리보기</span>
+            <span class="mockup__hint" aria-hidden="true">VIEW LIVE</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+        <dl class="detail-hero__meta reveal" data-delay="4">
+          <div class="detail-hero__meta-item">
+            <dt class="detail-hero__meta-label">TYPE</dt>
+            <dd class="detail-hero__meta-value">개인 프로젝트 · 여행 통합 예약 플랫폼 데모 (14-page)</dd>
+          </div>
+          <div class="detail-hero__meta-item">
+            <dt class="detail-hero__meta-label">ROLE</dt>
+            <dd class="detail-hero__meta-value">기획 · 디자인 · 퍼블리싱 · 인터랙션 100%</dd>
+          </div>
+          <div class="detail-hero__meta-item">
+            <dt class="detail-hero__meta-label">STACK</dt>
+            <dd class="detail-hero__meta-value">
+              <ul class="detail-stack">
+                <li class="detail-stack__item"><img src="images/icons/html5.svg" alt="" class="detail-stack__icon" />HTML5</li>
+                <li class="detail-stack__item"><img src="images/icons/css3.svg" alt="" class="detail-stack__icon" />CSS3</li>
+                <li class="detail-stack__item"><img src="images/icons/javascript.svg" alt="" class="detail-stack__icon" />JavaScript</li>
+                <li class="detail-stack__item detail-stack__item--text">Tabler Icons</li>
+              </ul>
+            </dd>
+          </div>
+          <div class="detail-hero__meta-item">
+            <dt class="detail-hero__meta-label">CONTRIBUTION</dt>
+            <dd class="detail-hero__meta-value">개인 100%</dd>
+          </div>
+          <div class="detail-hero__meta-item">
+            <dt class="detail-hero__meta-label">DURATION</dt>
+            <dd class="detail-hero__meta-value">1개월</dd>
+          </div>
+          <div class="detail-hero__meta-item">
+            <dt class="detail-hero__meta-label">DESIGN REFERENCE</dt>
+            <dd class="detail-hero__meta-value">Klook 예약형 커머스 + Stayfolio 절제된 에디토리얼</dd>
+          </div>
+        </dl>
+
+        <div class="detail-hero__actions reveal" data-delay="5">
+          <a href="https://oneeonec102030-dotcom.github.io/hokkaido-uxui/" class="btn btn--fill" target="_blank" rel="noopener">VIEW LIVE ↗</a>
+          <a href="https://github.com/oneeonec102030-dotcom/hokkaido-uxui" class="btn btn--ghost" target="_blank" rel="noopener">GITHUB ↗</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===== BRANDING RATIONALE ===== -->
+    <section class="section" id="branding">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">BRANDING RATIONALE</p>
+          <h2 class="section__title">왜 이런 콘셉트로 만들었는가.</h2>
+        </header>
+
+        <p class="branding__intro reveal">
+          온홋카이도는 리뉴얼이 아니라 처음부터 브랜드 콘셉트를 새로 세운 프로젝트입니다.
+          여행을 계획할 때 숙소·교통·액티비티를 각각 다른 곳에서 찾고 사람 수·일정·자격
+          조건까지 스스로 맞춰야 하는 번거로움에서 출발해, "복잡한 조율은 시스템이 대신
+          판단한다"는 문장을 브랜드 슬로건이자 제품 설계 원칙으로 세웠습니다.
+        </p>
+
+        <div class="branding__grid reveal">
+          <div class="branding__item">
+            <p class="branding__item-title">BRAND NAME</p>
+            <p class="branding__item-body">
+              '온홋카이도'는 <strong>'온전한' + '홋카이도'</strong>의 합성어입니다.
+              여러 서비스를 짜깁기해 여행을 완성하는 대신, 하나의 플래너가 여정을
+              온전히 책임진다는 의미를 이름에 담았습니다.
+            </p>
+          </div>
+          <div class="branding__item">
+            <p class="branding__item-title">WHY TWO DESIGN LANGUAGES</p>
+            <p class="branding__item-body">
+              숙소는 <strong>스테이폴리오</strong>(사진이 주인공, 영문 지역 라벨),
+              교통·액티비티는 <strong>클룩</strong>(평점·후기·가격 강조) 사이트를 디자인 레퍼런스로 참고했습니다.
+              머무는 공간은 감성으로, 예약이 목적인 상품은
+              신뢰감 있는 정보 밀도로 보여줘야 한다고 판단했습니다.
+            </p>
+          </div>
+          <div class="branding__item">
+            <p class="branding__item-title">COLOR</p>
+            <p class="branding__item-body">
+              프라이머리로 밝은 블루(#378ADD)를 선택했습니다. 이동·하늘·신뢰를
+              동시에 표현할 수 있는 색이라 여행 서비스의 톤에 맞다고 판단했고,
+              진한 네이비(#0C447C)를 딥 컬러로 짝지어 정보 위계를 분명히 했습니다.
+            </p>
+          </div>
+          <div class="branding__item">
+            <p class="branding__item-title">INCLUSIVE STATUS COLOR</p>
+            <p class="branding__item-body">
+              위험·경고·성공 같은 상태 색상은 색상만으로 구분하지 않고
+              <strong>항상 텍스트를 함께 병기</strong>하도록 설계했습니다.
+              색약 사용자도 같은 정보를 놓치지 않게 하려는 결정입니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COLOR & TYPE TOKENS ===== -->
+    <section class="section section--tint" id="tokens">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">DESIGN TOKENS</p>
+          <h2 class="section__title">실제 사용한 컬러 &amp; 타이포.</h2>
+        </header>
+
+        <div class="detail-tokens__group reveal">
+          <p class="detail-tokens__label">COLOR</p>
+          <div class="detail-tokens__swatches">
+            <div class="detail-tokens__swatch">
+              <div class="detail-tokens__chip" style="background:#378ADD;"></div>
+              <div class="detail-tokens__meta"><span class="detail-tokens__name">Primary</span><span class="detail-tokens__hex">#378ADD</span></div>
+            </div>
+            <div class="detail-tokens__swatch">
+              <div class="detail-tokens__chip" style="background:#0C447C;"></div>
+              <div class="detail-tokens__meta"><span class="detail-tokens__name">Deep</span><span class="detail-tokens__hex">#0C447C</span></div>
+            </div>
+            <div class="detail-tokens__swatch">
+              <div class="detail-tokens__chip" style="background:#E6F1FB;"></div>
+              <div class="detail-tokens__meta"><span class="detail-tokens__name">Light</span><span class="detail-tokens__hex">#E6F1FB</span></div>
+            </div>
+            <div class="detail-tokens__swatch">
+              <div class="detail-tokens__chip" style="background:#1A2530;"></div>
+              <div class="detail-tokens__meta"><span class="detail-tokens__name">Ink</span><span class="detail-tokens__hex">#1A2530</span></div>
+            </div>
+            <div class="detail-tokens__swatch">
+              <div class="detail-tokens__chip" style="background:#55636F;"></div>
+              <div class="detail-tokens__meta"><span class="detail-tokens__name">Ink Soft</span><span class="detail-tokens__hex">#55636F</span></div>
+            </div>
+            <div class="detail-tokens__swatch">
+              <div class="detail-tokens__chip" style="background:#93A1AD;"></div>
+              <div class="detail-tokens__meta"><span class="detail-tokens__name">Ink Mute</span><span class="detail-tokens__hex">#93A1AD</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-tokens__group reveal">
+          <p class="detail-tokens__label">TYPE</p>
+          <div class="detail-tokens__fonts">
+            <div class="detail-tokens__font-sample">
+              <p class="detail-tokens__font-name">NOTO SANS KR</p>
+              <p style="font-family:'Noto Sans KR', sans-serif; font-size:20px;">머무름부터 이동까지, 온전한 여행</p>
+              <p class="detail-tokens__font-usage">본문 · UI · 버튼 · 폼 등 전반</p>
+            </div>
+            <div class="detail-tokens__font-sample">
+              <p class="detail-tokens__font-name">NOTO SERIF KR</p>
+              <p style="font-family:'Noto Serif KR', serif; font-size:20px;">홋카이도의 온전한 여행</p>
+              <p class="detail-tokens__font-usage">히어로 타이틀 · 저널 큐레이션 헤드라인 (.serif)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OVERVIEW / FULL SCREENSHOT ===== -->
+    <section class="detail-full section" id="overview">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">OVERVIEW</p>
+          <h2 class="section__title">랜딩부터 예약 완료까지, 14개의 페이지.</h2>
+        </header>
+
+        <p class="branding__intro reveal" style="margin-bottom:40px;">
+          랜딩 · 숙소 리스트/상세 · 교통수단 허브 · 투어&amp;액티비티 리스트/상세 ·
+          여행서비스(쇼핑/식당 상세 포함) · 저널 · 여행 플래너 · 결제(Step 1~4) · 예약 완료까지,
+          <strong>14개의 실제 개별 페이지</strong>로
+          구성했습니다. 각 페이지는 독립적으로 열리지만, <code>trip</code> · <code>cart</code> ·
+          <code>travelers</code> · <code>pay</code> 상태를 <code>localStorage</code>에
+          공유하기 때문에 랜딩에서 입력한 조건이나 플래너에 담은 상품이 다른 페이지로
+          이동해도 그대로 유지됩니다. 단순 목업이 아니라 상품 담기 → 인원/연령 검증 →
+          결제 → 완료로 이어지는 실제 커머스 퍼널의 상태 흐름을 갖췄습니다.
+        </p>
+
+        <figure class="detail-full__shot reveal">
+          <div class="mockup">
+            <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="mockup__screen mockup__screen--tall">
+              <img src="images/detail-hokkaido-full.jpg" alt="온홋카이도 랜딩 페이지 전체 스크린샷" class="mockup__img mockup__img--natural"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="mockup__placeholder" aria-hidden="true">온홋카이도 랜딩 페이지 전체 스크린샷</span>            </div>
+          </div>
+          <figcaption class="detail-full__caption">
+            랜딩 히어로의 조건 검색 필 — 날짜·인원·캐리어·이동수단 선호를 입력하면
+            trip 상태로 저장되고, "아직 모름"을 선택하면 탐색형 뷰로 자연스럽게 전환됩니다.
+          </figcaption>
+        </figure>
+
+        <p class="detail-full__gallery-lead reveal">
+          랜딩은 14개 페이지 중 하나일 뿐이라, 나머지 화면도 함께 봐야 구조가 읽힙니다.
+        </p>
+
+        <div class="detail-full__gallery reveal">
+          <figure class="detail-full__gallery-item">
+            <div class="mockup">
+              <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <div class="mockup__screen">
+                <img src="images/detail-hokkaido-view-stay.jpg" alt="숙소 리스트 페이지 — 인원 초과 숙소 하단 정렬" class="mockup__img"
+                     onload="this.nextElementSibling.classList.add('is-hidden')"
+                     onerror="this.classList.add('is-hidden')" />
+                <span class="mockup__placeholder" aria-hidden="true">숙소 리스트</span>
+              </div>
+            </div>
+            <figcaption class="detail-full__gallery-caption">숙소 리스트 — 지역 필터 + 인원 초과 하단 정렬</figcaption>
+          </figure>
+
+          <figure class="detail-full__gallery-item">
+            <div class="mockup">
+              <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <div class="mockup__screen">
+                <img src="images/detail-hokkaido-view-transport.jpg" alt="교통수단 페이지 — 추천 배너와 근거 비교표" class="mockup__img"
+                     onload="this.nextElementSibling.classList.add('is-hidden')"
+                     onerror="this.classList.add('is-hidden')" />
+                <span class="mockup__placeholder" aria-hidden="true">교통수단 추천</span>
+              </div>
+            </div>
+            <figcaption class="detail-full__gallery-caption">교통수단 — 근거를 공개하는 추천 배너</figcaption>
+          </figure>
+
+          <figure class="detail-full__gallery-item">
+            <div class="mockup">
+              <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <div class="mockup__screen">
+                <img src="images/detail-hokkaido-view-planner.jpg" alt="여행 플래너 페이지 — 타임라인과 인원 불일치 배너" class="mockup__img"
+                     onload="this.nextElementSibling.classList.add('is-hidden')"
+                     onerror="this.classList.add('is-hidden')" />
+                <span class="mockup__placeholder" aria-hidden="true">여행 플래너</span>
+              </div>
+            </div>
+            <figcaption class="detail-full__gallery-caption">여행 플래너 — 일자별 타임라인 + 인원 불일치 배너</figcaption>
+          </figure>
+
+          <figure class="detail-full__gallery-item">
+            <div class="mockup">
+              <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <div class="mockup__screen">
+                <img src="images/detail-hokkaido-view-checkout.jpg" alt="결제 페이지 — Step 1~4 진행 바와 검증 게이트" class="mockup__img"
+                     onload="this.nextElementSibling.classList.add('is-hidden')"
+                     onerror="this.classList.add('is-hidden')" />
+                <span class="mockup__placeholder" aria-hidden="true">결제 Step 1~4</span>
+              </div>
+            </div>
+            <figcaption class="detail-full__gallery-caption">결제 — Step 1~4 진행 바 + 실시간 검증</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KEY FEATURES ===== -->
+    <section class="detail-features section section--tint" id="features">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">KEY FEATURES</p>
+          <h2 class="section__title">적용된 디자인 패턴.</h2>
+        </header>
+
+        <!-- Feature 01 -->
+        <article class="feature reveal">
+          <div class="feature__text">
+            <p class="feature__index">FEATURE 01</p>
+            <h3 class="feature__title">이중 진입 경로</h3>
+            <p class="feature__desc">
+              랜딩에 조건 검색 필과 카테고리 아이콘 행을 나란히 배치해, 목적지가 정해진
+              사용자와 아직 둘러보는 중인 사용자를 모두 받아냅니다. "'아직 모름'을 골라도
+              괜찮아요 — 둘러보며 정할 수 있어요"라는 힌트 문구를 넣어, 결정을 강요하지
+              않고 탐색으로 자연스럽게 유도한 것이 이 프로젝트에서 가장 신경 쓴 디테일입니다.
+            </p>
+            <div class="pattern-tags"><span class="pattern-tag">DUAL ENTRY POINT</span></div>
+          </div>
+          <figure class="feature__media">
+            <img src="images/detail-hokkaido-f1.jpg" alt="조건 검색 필과 카테고리 진입 경로" class="feature__img"
+                 onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="feature__placeholder" aria-hidden="true">조건 검색 필과 카테고리 진입 경로</span>          </figure>
+        </article>
+
+        <!-- Feature 02 -->
+        <article class="feature feature--reverse reveal">
+          <div class="feature__text">
+            <p class="feature__index">FEATURE 02</p>
+            <h3 class="feature__title">근거를 공개하는 교통수단 추천</h3>
+            <p class="feature__desc">
+              인원·짐 개수·역 접근성 3가지 축으로 점수를 매겨 JR패스 / 대형택시 / 렌터카
+              중 하나를 추천 배너로 제시합니다. '근거 더보기'를 누르면 비교표가 펼쳐져서,
+              추천이 왜 그렇게 나왔는지 사용자가 직접 확인할 수 있습니다 — 시스템이
+              대신 판단하되, 판단 과정을 숨기지 않는 방식입니다.
+            </p>
+            <div class="pattern-tags"><span class="pattern-tag">PROGRESSIVE DISCLOSURE</span></div>
+          </div>
+          <figure class="feature__media">
+            <img src="images/detail-hokkaido-f2.jpg" alt="교통수단 추천 배너와 근거 더보기" class="feature__img"
+                 onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="feature__placeholder" aria-hidden="true">교통수단 추천 배너와 근거 더보기</span>          </figure>
+        </article>
+
+        <!-- Feature 03 -->
+        <article class="feature reveal">
+          <div class="feature__text">
+            <p class="feature__index">FEATURE 03</p>
+            <h3 class="feature__title">인원 초과 숙소, 숨기지 않기</h3>
+            <p class="feature__desc">
+              정원이 맞지 않는 숙소를 목록에서 아예 제외하는 대신, 하단에 '인원 초과'
+              배지와 함께 그대로 노출합니다. 왜 그 상품이 안 되는지 이유와 함께 보여주는
+              편이, 선택지를 조용히 지우는 것보다 사용자에게 더 친절하다고 판단했습니다.
+            </p>
+            <div class="pattern-tags"><span class="pattern-tag">GRACEFUL DEGRADATION</span></div>
+          </div>
+          <figure class="feature__media">
+            <img src="images/detail-hokkaido-f3.jpg" alt="인원 초과 숙소 하단 정렬과 배지" class="feature__img"
+                 onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="feature__placeholder" aria-hidden="true">인원 초과 숙소 하단 정렬과 배지</span>          </figure>
+        </article>
+
+        <!-- Feature 04 -->
+        <article class="feature feature--reverse reveal">
+          <div class="feature__text">
+            <p class="feature__index">FEATURE 04</p>
+            <h3 class="feature__title">되돌릴 수 있는 자동화 + 결제 검증 게이트</h3>
+            <p class="feature__desc">
+              플래너에서 인원이 안 맞는 상품은 전역 배너와 카드별 경고로 이중 안내하고,
+              '일괄 수정' 버튼으로 한 번에 맞출 수 있습니다. 시스템이 자동으로 바꾼
+              교통수단은 '렌터카로 되돌리기'로 원복 가능하며, 결제 Step 1~4 각각에
+              검증 게이트를 두어 인원·생년월일·연령 자격 조건이 충족되지 않으면 다음
+              단계로 넘어가지 못하게 막습니다. 연령 제한에 걸린 동행자를 발견하면
+              '제외하고 진행' 또는 '상품 삭제' 두 경로를 바로 제시해, 막다른 길에
+              두지 않는 것도 이 프로젝트가 지킨 원칙입니다.
+            </p>
+            <div class="pattern-tags">
+              <span class="pattern-tag">REVERSIBLE ACTION</span>
+              <span class="pattern-tag">WIZARD / STEP GATE</span>
+            </div>
+          </div>
+          <figure class="feature__media feature__media--compare">
+            <div class="feature__media-half">
+              <span class="compare-tag">PLANNER</span>
+              <img src="images/detail-hokkaido-f4-1.jpg" alt="플래너 인원 불일치 배너와 렌터카로 되돌리기 버튼" class="feature__img"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="feature__placeholder" aria-hidden="true">플래너 — 인원 불일치 배너 &amp; 되돌리기</span>
+            </div>
+            <div class="feature__media-half">
+              <span class="compare-tag">CHECKOUT · STEP 1</span>
+              <img src="images/detail-hokkaido-f4-2.jpg" alt="결제 Step 1의 연령 제한 경고와 제외하고 진행 · 상품 삭제 버튼" class="feature__img"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="feature__placeholder" aria-hidden="true">체크아웃 — 연령 제한 검증 게이트</span>
+            </div>
+          </figure>
+        </article>
+
+        <!-- Feature 05 -->
+        <article class="feature reveal">
+          <div class="feature__text">
+            <p class="feature__index">FEATURE 05</p>
+            <h3 class="feature__title">에디토리얼에서 예약까지, 끊기지 않는 동선</h3>
+            <p class="feature__desc">
+              저널의 지역 소개 글은 다시 읽는 콘텐츠로 끝나지 않습니다. 본문 중간에
+              "이 지역 숙소 미리 보기" 카드를 인라인으로 심어두고, 클릭하면 숙소·액티비티
+              페이지로 이동하면서 해당 지역만 걸러 보여줍니다. 여행 조건의 날짜가 그
+              지역의 베스트 시즌과 겹치면 안내 배너도 자동으로 뜨죠. 정보를 읽다가
+              바로 예약으로 넘어갈 수 있도록, 콘텐츠와 커머스 페이지를 쿼리 파라미터로
+              연결했습니다.
+            </p>
+            <div class="pattern-tags">
+              <span class="pattern-tag">EDITORIAL → COMMERCE</span>
+              <span class="pattern-tag">CONTEXTUAL DEEP LINK</span>
+            </div>
+          </div>
+          <figure class="feature__media feature__media--compare">
+            <div class="feature__media-half">
+              <span class="compare-tag">EDITORIAL</span>
+              <img src="images/detail-hokkaido-f5-1.jpg" alt="니세코 소개 글의 계절 배너와 인라인 관련 상품 카드" class="feature__img"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="feature__placeholder" aria-hidden="true">에디토리얼 — 계절 배너 &amp; 관련 상품 카드</span>
+            </div>
+            <div class="feature__media-half">
+              <span class="compare-tag">STAY · FILTERED</span>
+              <img src="images/detail-hokkaido-f5-2.jpg" alt="니세코 지역으로 필터링된 숙소 리스트와 지역 배너" class="feature__img"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="feature__placeholder" aria-hidden="true">숙소 리스트 — 지역 필터 반영</span>
+            </div>
+          </figure>
+        </article>
+
+        <!-- Feature 06 -->
+        <article class="feature feature--reverse reveal">
+          <div class="feature__text">
+            <p class="feature__index">FEATURE 06</p>
+            <h3 class="feature__title">결제 중 품절, 막다른 길 대신 갈림길로</h3>
+            <p class="feature__desc">
+              결제 버튼을 누른 뒤 처리 대기 상태를 거쳐, 담아둔 숙소가 "결제 중 품절"되는
+              상황을 재현합니다. 이때 나머지 상품은 정상 예약을 유지하고 품절된 상품
+              금액만 자동 환불 안내를 띄운 뒤, "대체 숙소 찾기"와 "이 상품 없이 진행"
+              두 갈래 선택지를 바로 제시합니다. 결제 실패를 오류 화면으로 끝내지 않고,
+              나머지 예약은 지키면서 다음 행동을 고를 수 있게 설계한 엣지 케이스입니다.
+            </p>
+            <div class="pattern-tags">
+              <span class="pattern-tag">GRACEFUL FAILURE</span>
+              <span class="pattern-tag">PARTIAL SUCCESS</span>
+            </div>
+          </div>
+          <figure class="feature__media">
+            <img src="images/detail-hokkaido-f6.jpg" alt="결제 중 품절 안내와 대체 숙소 찾기, 이 상품 없이 진행 버튼" class="feature__img"
+                 onload="this.nextElementSibling.classList.add('is-hidden')"
+                 onerror="this.classList.add('is-hidden')" />
+            <span class="feature__placeholder" aria-hidden="true">결제 중 품절 안내와 대체 숙소 찾기, 이 상품 없이 진행 버튼</span>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== RESPONSIVE ===== -->
+    <section class="detail-responsive section" id="responsive">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">RESPONSIVE</p>
+          <h2 class="section__title">화면 폭에 따른 대응.</h2>
+        </header>
+
+        <div class="devices reveal">
+          <figure class="devices__item devices__item--desktop">
+            <div class="devices__screen">
+              <img src="images/detail-hokkaido-desktop.jpg" alt="데스크톱 화면" class="devices__img"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="devices__placeholder" aria-hidden="true">데스크톱 화면</span>            </div>
+            <figcaption class="devices__label">DESKTOP</figcaption>
+          </figure>
+          <figure class="devices__item devices__item--tablet">
+            <div class="devices__screen">
+              <img src="images/detail-hokkaido-tablet.jpg" alt="태블릿 화면" class="devices__img"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="devices__placeholder" aria-hidden="true">태블릿 화면</span>            </div>
+            <figcaption class="devices__label">TABLET · 960↓</figcaption>
+          </figure>
+          <figure class="devices__item devices__item--mobile">
+            <div class="devices__screen">
+              <img src="images/detail-hokkaido-mobile.jpg" alt="모바일 화면" class="devices__img"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="devices__placeholder" aria-hidden="true">모바일 화면</span>            </div>
+            <figcaption class="devices__label">MOBILE</figcaption>
+          </figure>
+        </div>
+
+        <ul class="detail-responsive__notes reveal">
+          <li class="detail-responsive__note">960px 이하에서는 상단 글로벌 내비게이션이 숨겨지고, 랜딩 화면에서는 카테고리 아이콘 행과 헤더의 오프캔버스 메뉴(<code>#mobile-nav</code>)가 대체 진입 경로 역할을 합니다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== TROUBLESHOOTING LOG ===== -->
+    <section class="detail-trouble section section--tint" id="next-steps">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">TROUBLESHOOTING LOG</p>
+          <h2 class="section__title">발견한 문제, 이렇게 해결했습니다.</h2>
+        </header>
+        <p class="branding__intro reveal">
+          코드 리뷰를 이어가며 발견한 문제를 하나씩 고쳐온 기록입니다.
+        </p>
+
+        <ol class="commit-log reveal">
+          <li class="commit-log__item">
+            <div class="commit-log__connector"><span class="commit-log__dot" aria-hidden="true"></span></div>
+            <div class="commit-log__card">
+              <div class="commit-log__meta">
+                <span class="commit-log__badge">FIXED</span>
+                <span class="commit-log__id">ISSUE #01 · 모바일 오프캔버스 메뉴</span>
+              </div>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--found">발견</span>모바일에서 숙소·교통·액티비티 같은 서브 뷰에 진입하면, 다른 카테고리로 이동할 방법이 로고 클릭(홈으로)이나 여행 플래너 버튼뿐이었습니다. <code>.global-nav</code>가 960px 이하에서 <code>display:none</code> 처리만 되어 있고 이를 대체할 메뉴가 없었습니다.</p>
+              <p class="commit-log__why">서브 뷰에 들어간 뒤에도 카테고리를 자유롭게 오갈 수 있어야, 실제 서비스처럼 자연스럽게 둘러볼 수 있습니다.</p>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--fix">해결</span>헤더에 햄버거 버튼(<code>#nav-toggle</code>)을 추가하고, 오른쪽에서 슬라이드인되는 메뉴(<code>#mobile-nav</code>)를 새로 만들었습니다. 5개 카테고리 + 여행 플래너로 서브 뷰 어디서든 이동할 수 있고, 배경 클릭·닫기 버튼·ESC 키로 닫히며 데스크톱 너비로 리사이즈되면 자동으로 닫힙니다. <code>css/styles.css</code>(28-1번 섹션), <code>js/common.js</code>의 <code>initMobileNav()</code> 참고.</p>
+            </div>
+          </li>
+
+          <li class="commit-log__item">
+            <div class="commit-log__connector"><span class="commit-log__dot" aria-hidden="true"></span></div>
+            <div class="commit-log__card">
+              <div class="commit-log__meta">
+                <span class="commit-log__badge">FIXED</span>
+                <span class="commit-log__id">ISSUE #02 · 하드코딩된 날짜</span>
+              </div>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--found">발견</span>랜딩 조건 검색 필의 기본 날짜와 연령 계산 기준일이 <code>2026-08-15</code>로 하드코딩되어 있어, 이 시점 이후 데모를 열면 날짜 선택기가 과거로 열렸습니다.</p>
+              <p class="commit-log__why">기능 자체엔 문제가 없지만, 시연 시점에 따라 첫인상에서 신뢰도가 떨어질 수 있었습니다.</p>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--fix">해결</span><code>common.js</code>의 <code>computeDefaultTripDates()</code>가 <code>new Date()</code> 기준 "오늘로부터 2주 뒤, 3박 4일"을 매번 새로 계산하도록 바꿨습니다. <code>ageOf()</code>의 연령 계산 기준일도 하드코딩 대신 <code>trip.start</code>(현재 저장된 여행조건의 출발일)를 쓰도록 수정했고, <code>index.html</code> 날짜 인풋에 박혀 있던 <code>value="2026-08-15"</code>도 지워 <code>landing.js</code>가 페이지 로드 시 <code>trip</code> 값으로 채우도록 했습니다.</p>
+            </div>
+          </li>
+
+          <li class="commit-log__item">
+            <div class="commit-log__connector"><span class="commit-log__dot" aria-hidden="true"></span></div>
+            <div class="commit-log__card">
+              <div class="commit-log__meta">
+                <span class="commit-log__badge">FIXED</span>
+                <span class="commit-log__id">ISSUE #03 · 교통수단 추천의 고정 상수</span>
+              </div>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--found">발견</span>교통수단 규칙 기반 추천의 <code>hasHardRegion</code> 조건이 "플래너에 니세코(역 접근 어려움) 숙소가 담겨 있음"을 가정한 상수로 고정되어 있어, 항상 같은 추천 경로를 탔습니다.</p>
+              <p class="commit-log__why">데모 시연 목적으로는 합리적인 선택이었지만, 실 서비스로 전환할 때 반드시 교체해야 할 지점이라는 걸 문서로 남겨두지 않으면 이관 시 누락될 수 있었습니다.</p>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--fix">해결</span><code>transport.js</code>에 <code>hasHardAccessRegionInCart()</code>를 추가해서, 플래너에 담긴 숙소 이름을 <code>stays</code> 배열과 매칭 → 지역 확인 → <code>destinationDetails[slug].accessHard</code> 플래그로 실제 접근성을 판단하도록 교체했습니다. 이름 매칭 방식의 한계, 추천 문장 안 지역명 하드코딩, "담기" 버튼이 아직 실제 장바구니를 안 바꾸는 점처럼 이관 시 놓치기 쉬운 지점은 코드 주석과 <code>NOTES.md</code>(루트에 신규 생성)에 함께 정리해뒀습니다.</p>
+            </div>
+          </li>
+
+          <li class="commit-log__item">
+            <div class="commit-log__connector"><span class="commit-log__dot" aria-hidden="true"></span></div>
+            <div class="commit-log__card">
+              <div class="commit-log__meta">
+                <span class="commit-log__badge">UPDATED</span>
+                <span class="commit-log__id">ISSUE #04 · 가상의 상품명 → 실제 상품 정보</span>
+              </div>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--found">배경</span>초기 버전은 숙소·교통·액티비티·여행서비스가 전부 가상의 이름과 설명으로 채워져 있어, 데모를 오래 들여다볼수록 실제 서비스처럼 느껴지지 않는 지점이 보였습니다.</p>
+              <p class="commit-log__why">UI 패턴을 검증하는 데는 문제가 없었지만, 포트폴리오로 보여줄 땐 실제 존재하는 정보 위에서 흐름이 자연스러운지까지 보여주고 싶었습니다.</p>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--fix">반영</span>숙소 18곳(힐튼 니세코 빌리지, JR타워 호텔 닛코 삿포로 등), 액티비티 4종(NAC 니세코 어드벤처 센터, 비에이 뷰 버스, 오타루 운하 크루즈, 노보리베츠 게이트웨이 센터), 교통수단(JR 홋카이도 레일패스, MK택시, 토요타 렌터카 등), 여행서비스(돈키호테·빅카메라 쇼핑쿠폰, 테이블체크 식당 예약)까지 전부 실존 업체명·주소·연락처로 교체했습니다. 이 과정에서 JR 삿포로-후라노 에리어 패스가 니세코 구간을 커버하지 않는다는 사실을 확인해, 교통수단 추천 로직과 플래너의 되돌리기 버튼(JR패스 → 렌터카)을 함께 고쳤고 래프팅 최저 연령도 실제 기준(만 6세)에 맞춰 검증 로직을 갱신했습니다. 액티비티·여행서비스(쇼핑/식당)에는 각각 <code>activity-detail.html</code>·<code>service-shopping.html</code>·<code>service-restaurant.html</code> 상세 페이지도 새로 만들어, 전체 페이지 수가 9개에서 14개로 늘었습니다.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== PREV / NEXT ===== -->
+    <section class="detail-nav">
+      <div class="section__inner detail-nav__inner">
+        <a href="detail-bebe.html" class="detail-nav__link detail-nav__link--prev">
+          <span class="detail-nav__dir">← PREV</span>
+          <span class="detail-nav__name">BEBE DE PINO</span>
+        </a>
+        <a href="index.html#project" class="detail-nav__all">ALL PROJECTS</a>
+        <a href="detail-library.html" class="detail-nav__link detail-nav__link--next">
+          <span class="detail-nav__dir">NEXT →</span>
+          <span class="detail-nav__name">별빛도서관</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="detail-footer">
+    <p class="detail-footer__copy">© 2026 WON HYUNGYEONG. Designed &amp; Published by myself.</p>
+    <a href="#top" class="detail-footer__top">TOP ↑</a>
+  </footer>
+
+  <script src="js/script.js?v=5"></script>
+</body>
+</html>

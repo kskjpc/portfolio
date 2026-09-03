@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LUMÉ — 가상 럭셔리 향수 브랜드 웹사이트 프로젝트 상세" />
+  <title>LUMÉ — Memory Fragrance — PROJECT DETAIL | WON HYUNGYEONG</title>
+
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css?v=4" />
+  <link rel="stylesheet" href="css/detail.css?v=4" />
+
+  <!-- 이 프로젝트의 브랜드 컬러를 페이지 포인트 컬러로 사용 -->
+  <style>
+    :root {
+      --project-accent: #C8B79A;
+      --project-accent-deep: #8A7A5C;
+      --project-tint: #F5F5F0;
+    }
+  </style>
+</head>
+<body id="top" class="page-detail">
+
+  <div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+
+  <header class="header page-detail-header" id="header">
+    <div class="header__inner">
+      <div class="detail-header-nav" aria-label="이전/다음 프로젝트">
+        <a href="detail-library.html" class="detail-header-nav__link detail-header-nav__link--prev" aria-label="이전 프로젝트: 별빛도서관">
+          <span class="detail-header-nav__dir">← PREV</span>
+          <span class="detail-header-nav__name">별빛도서관</span>
+        </a>
+        <a href="index.html#project" class="detail-header-nav__all" aria-label="전체 프로젝트 목록"><span class="detail-header-nav__all-full">ALL PROJECTS</span><span class="detail-header-nav__all-short">ALL</span></a>
+        <a href="detail-bebe.html" class="detail-header-nav__link detail-header-nav__link--next" aria-label="다음 프로젝트: BEBE DE PINO">
+          <span class="detail-header-nav__dir">NEXT →</span>
+          <span class="detail-header-nav__name">BEBE DE PINO</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- ===== DETAIL HERO ===== -->
+    <section class="detail-hero" id="hero" style="background: linear-gradient(180deg, var(--project-tint) 0%, var(--color-bg) 100%);">
+      <div class="section__inner">
+
+    <div class="detail-hero__top">
+      <div class="detail-hero__intro">
+        <p class="detail-hero__eyebrow reveal" data-delay="1">PROJECT 02 — 가상 럭셔리 향수 브랜드 웹사이트</p>
+        <h1 class="detail-hero__title reveal" data-delay="2">LUMÉ — Memory Fragrance</h1>
+        <p class="detail-hero__sub reveal" data-delay="3">
+          기억을 향기로 기록한다는 콘셉트의 가상 향수 브랜드.<br />
+          브랜드 랜딩페이지와 URL 파라미터 기반 제품 상세페이지로 구성된,
+          랜딩 + 상세 + 미니 커머스 UI 프로젝트입니다.
+        </p>
+      </div>
+
+      <a href="https://kskjpc.github.io/lume-uxui/" target="_blank" rel="noopener"
+         class="detail-hero__preview project-card__mockup project-card__mockup--lume reveal" data-delay="3"
+         aria-label="LUMÉ — Memory Fragrance 실제 사이트 미리보기">
+        <div class="mockup">
+          <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="mockup__screen">
+            <img src="images/detail-lume-full.jpg" alt="LUMÉ — Memory Fragrance 웹사이트 미리보기" class="mockup__img"
+                 onload="this.nextElementSibling.classList.add('is-hidden')"
+                 onerror="this.classList.add('is-hidden')" />
+            <span class="mockup__placeholder" aria-hidden="true">LUMÉ — Memory Fragrance 웹사이트 미리보기</span>
+            <span class="mockup__hint" aria-hidden="true">VIEW LIVE</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+        <dl class="detail-hero__meta reveal" data-delay="4">
+          <div class="detail-hero__meta-item">
+            <dt class="detail-hero__meta-label">TYPE</dt>
+            <dd class="detail-hero__meta-value">개인 프로젝트 · 브랜드 랜딩 + 제품 상세페이지</dd>
+          </div>
+          <div class="detail-hero__meta-item">
+            <dt class="detail-hero__meta-label">ROLE</dt>
+            <dd class="detail-hero__meta-value">브랜딩 · 카피 · 퍼블리싱 · 인터랙션 100%</dd>
+          </div>
+          <div class="detail-hero__meta-item">
+            <dt class="detail-hero__meta-label">STACK</dt>
+            <dd class="detail-hero__meta-value">
+              <ul class="detail-stack">
+                <li class="detail-stack__item"><img src="images/icons/html5.svg" alt="" class="detail-stack__icon" />HTML5</li>
+                <li class="detail-stack__item"><img src="images/icons/css3.svg" alt="" class="detail-stack__icon" />CSS3</li>
+                <li class="detail-stack__item"><img src="images/icons/javascript.svg" alt="" class="detail-stack__icon" />JavaScript</li>
+                <li class="detail-stack__item detail-stack__item--text">IntersectionObserver</li>
+              </ul>
+            </dd>
+          </div>
+          <div class="detail-hero__meta-item">
+            <dt class="detail-hero__meta-label">CONTRIBUTION</dt>
+            <dd class="detail-hero__meta-value">개인 100%</dd>
+          </div>
+          <div class="detail-hero__meta-item">
+            <dt class="detail-hero__meta-label">DURATION</dt>
+            <dd class="detail-hero__meta-value">1개월</dd>
+          </div>
+          <div class="detail-hero__meta-item">
+            <dt class="detail-hero__meta-label">CONCEPT</dt>
+            <dd class="detail-hero__meta-value">향기는 기억이 된다</dd>
+          </div>
+        </dl>
+
+        <div class="detail-hero__actions reveal" data-delay="5">
+          <a href="https://kskjpc.github.io/lume-uxui/" class="btn btn--fill" target="_blank" rel="noopener">VIEW LIVE ↗</a>
+          <a href="https://github.com/kskjpc/lume-uxui.git" class="btn btn--ghost" target="_blank" rel="noopener">GITHUB ↗</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===== BRANDING RATIONALE ===== -->
+    <section class="section" id="branding">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">BRANDING RATIONALE</p>
+          <h2 class="section__title">왜 이런 콘셉트로 만들었는가.</h2>
+        </header>
+
+        <p class="branding__intro reveal">
+          LUMÉ는 세계관부터 제품 라인업까지 직접 설계한 가상 브랜드입니다.
+          "잊힌 순간을 향기로 되살리다"라는 핵심 문장 아래, 기억의 장면에서 출발한
+          여섯 가지 향(First Light, Rainy Sunday, Midnight Walk, Velvet Dusk,
+          White Garden, Santal Hour)을 만들고 각 제품에 고유한 '기억 카피'를 붙였습니다.
+        </p>
+
+        <div class="branding__grid reveal">
+          <div class="branding__item">
+            <p class="branding__item-title">WHY A FRAGRANCE BRAND</p>
+            <p class="branding__item-body">감성·제품·비주얼·상업성을 한 번에 보여줄 수 있는 주제라서
+              선택했습니다. 향수는 기능 설명이 아니라 <strong>느낌을 파는 제품</strong>이라,
+              에디토리얼 연출과 커머스 구조를 함께 담기에 가장 좋은 소재였습니다.</p>
+          </div>
+          <div class="branding__item">
+            <p class="branding__item-title">MEMORY COPY</p>
+            <p class="branding__item-body">제품마다 기억의 장면을 카피로 붙였습니다 — First Light는 "새벽
+              첫 햇살이 창문을 통해 들어오던 그 아침의 기억", Rainy Sunday는 "빗소리를
+              들으며 책을 읽던 조용한 일요일 오후". 제품이 아니라 <strong>장면을
+              파는 브랜드</strong>라는 정체성을 카피로 구현했습니다.</p>
+          </div>
+          <div class="branding__item">
+            <p class="branding__item-title">COLOR</p>
+            <p class="branding__item-body">따뜻한 오프화이트(#F5F5F0) 위에 블랙(#1A1A1A) 텍스트,
+              웜 베이지(#C8B79A) 포인트를 얹었습니다. 큰 여백과 얇은 타이포로
+              럭셔리 무드를 만드는 조합입니다.</p>
+          </div>
+          <div class="branding__item">
+            <p class="branding__item-title">TYPE PAIRING</p>
+            <p class="branding__item-body">세리프 <strong>Cormorant Garamond</strong>를 디스플레이로 세웠습니다.
+              향수·패션·뷰티 브랜드와 궁합이 좋은 서체로, Noto Sans KR / Noto Serif
+              KR과 짝지어 감성 카피와 UI 텍스트의 역할을 분리했습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DESIGN TOKENS ===== -->
+    <section class="section section--tint" id="tokens">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">DESIGN TOKENS</p>
+          <h2 class="section__title">실제 사용한 컬러 & 타이포.</h2>
+        </header>
+
+        <div class="detail-tokens__group reveal">
+          <p class="detail-tokens__label">COLOR</p>
+          <div class="detail-tokens__swatches">
+            <div class="detail-tokens__swatch">
+              <div class="detail-tokens__chip" style="background:#F5F5F0;"></div>
+              <div class="detail-tokens__meta"><span class="detail-tokens__name">Off White</span><span class="detail-tokens__hex">#F5F5F0</span></div>
+            </div>
+            <div class="detail-tokens__swatch">
+              <div class="detail-tokens__chip" style="background:#1A1A1A;"></div>
+              <div class="detail-tokens__meta"><span class="detail-tokens__name">Black Ink</span><span class="detail-tokens__hex">#1A1A1A</span></div>
+            </div>
+            <div class="detail-tokens__swatch">
+              <div class="detail-tokens__chip" style="background:#C8B79A;"></div>
+              <div class="detail-tokens__meta"><span class="detail-tokens__name">Warm Beige</span><span class="detail-tokens__hex">#C8B79A</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-tokens__group reveal">
+          <p class="detail-tokens__label">TYPE</p>
+          <div class="detail-tokens__fonts">
+            <div class="detail-tokens__font-sample">
+              <p class="detail-tokens__font-name">CORMORANT GARAMOND</p>
+              <p style="font-family:'Cormorant Garamond', serif; font-size:20px;">Memory Fragrance Collection</p>
+              <p class="detail-tokens__font-usage">디스플레이 · 브랜드 타이틀</p>
+            </div>
+            <div class="detail-tokens__font-sample">
+              <p class="detail-tokens__font-name">NOTO SANS KR / SERIF KR</p>
+              <p style="font-family:'Noto Sans KR', sans-serif; font-size:20px;">잊힌 순간을 향기로 되살리다</p>
+              <p class="detail-tokens__font-usage">본문(Sans) · 감성 카피(Serif)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OVERVIEW ===== -->
+    <section class="detail-full section" id="overview">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">OVERVIEW</p>
+          <h2 class="section__title">랜딩과 상세, 두 개의 페이지.</h2>
+        </header>
+
+        <p class="branding__intro reveal" style="margin-bottom:40px;">
+          랜딩(lume.html)은 Hero Video → Collection → Feature → Best → Fragrance
+          Notes → Story → Footer 흐름으로 브랜드 세계관을 전달하고, 상세페이지
+          (detail.html)는 <code>detail.html?id=1</code> 형식의 URL 파라미터로 하나의
+          템플릿에서 6개 제품 데이터를 동적으로 렌더링합니다. Hero 영상으로 분위기를
+          인식하고 → Collection에서 탐색하고 → hover 후 View Detail → 상세에서 향
+          노트·기억 카피 확인 → 옵션 선택까지, 사용자가 상품을 탐색하는 구조를 갖춘
+          프로젝트입니다.
+        </p>
+
+        <figure class="detail-full__shot reveal">
+          <div class="mockup">
+            <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="mockup__screen mockup__screen--tall">
+              <img src="images/detail-lume-full.jpg" alt="LUMÉ — Memory Fragrance 전체 페이지 스크린샷" class="mockup__img mockup__img--natural"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="mockup__placeholder" aria-hidden="true">LUMÉ — Memory Fragrance 전체 페이지 스크린샷</span>            </div>
+          </div>
+          <figcaption class="detail-full__caption">
+            랜딩 히어로 — 풀스크린 영상 위에 절제된 브랜드 카피. 『덜 말하고 더 느끼게』가 이 페이지의 연출 원칙입니다.
+          </figcaption>
+        </figure>
+
+        <figure class="detail-full__shot reveal" style="margin-top:40px;">
+          <div class="mockup">
+            <div class="mockup__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="mockup__screen mockup__screen--tall">
+              <img src="images/detail-lume-product.png" alt="LUMÉ 제품 상세페이지 스크린샷" class="mockup__img mockup__img--natural"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="mockup__placeholder" aria-hidden="true">LUMÉ 제품 상세페이지 스크린샷</span>            </div>
+          </div>
+          <figcaption class="detail-full__caption">
+            제품 상세페이지(detail.html) — 좌측 sticky 이미지 갤러리와 우측 제품 정보 패널의
+            2단 그리드 구조. 향 노트·Scent Profile·옵션 선택까지 한 화면에 담았습니다.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== KEY FEATURES ===== -->
+    <section class="detail-features section section--tint" id="features">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">KEY FEATURES</p>
+          <h2 class="section__title">연출과 구조, 둘 다.</h2>
+        </header>
+
+        <article class="feature reveal">
+          <div class="feature__text">
+            <p class="feature__index">FEATURE 01</p>
+            <h3 class="feature__title">Sticky Crossfade 스토리텔링</h3>
+            <p class="feature__desc">
+              Feature 섹션은 스크롤 중 화면이 고정된 채 3개의 풀스크린 슬라이드가
+              크로스페이드로 전환됩니다. 활성 이미지에는 Ken Burns 효과(느린 확대/축소)가
+              걸리고 텍스트가 순차적으로 페이드인됩니다 — "향기는 기억이 된다",
+              "자연에서 온 향기", "매일 아침 새로운 기억" 세 장면으로 브랜드 철학을
+              전달합니다.
+            </p>
+            <div class="pattern-tags"><span class="pattern-tag">STICKY STORYTELLING</span><span class="pattern-tag">EDITORIAL LANDING</span></div>
+          </div>
+          <figure class="feature__media feature__media--video">
+            <video class="feature__img" src="images/detail-lume-f1.mp4" poster="images/detail-lume-f1.jpg"
+                   autoplay muted loop playsinline
+                   onloadeddata="this.nextElementSibling.classList.add('is-hidden')"
+                   onerror="this.classList.add('is-hidden')"></video>
+            <span class="feature__placeholder" aria-hidden="true">Sticky Crossfade 스토리텔링 (영상)</span>
+          </figure>
+        </article>
+        <article class="feature feature--reverse reveal">
+          <div class="feature__text">
+            <p class="feature__index">FEATURE 02</p>
+            <h3 class="feature__title">Fragrance Notes 타임라인</h3>
+            <p class="feature__desc">
+              Top(0—30min) → Middle(30min—4hr) → Base(4hr—)로 향이 시간에 따라
+              변하는 구조를, 스크롤 진행률에 맞춰 노트별 강조와 배경 이미지가 전환되는
+              타임라인으로 시각화했습니다. 향수라는 주제와 스크롤 인터랙션이라는 기능이
+              정확히 맞물리는, 이 프로젝트의 핵심 차별점입니다.
+            </p>
+            <div class="pattern-tags"><span class="pattern-tag">FRAGRANCE TIMELINE</span></div>
+          </div>
+          <figure class="feature__media feature__media--video">
+            <video class="feature__img" src="images/detail-lume-f2.mp4" poster="images/detail-lume-f2.jpg"
+                   autoplay muted loop playsinline
+                   onloadeddata="this.nextElementSibling.classList.add('is-hidden')"
+                   onerror="this.classList.add('is-hidden')"></video>
+            <span class="feature__placeholder" aria-hidden="true">향 노트 타임라인 전환 (영상)</span>
+          </figure>
+        </article>
+        <article class="feature reveal">
+          <div class="feature__text">
+            <p class="feature__index">FEATURE 03</p>
+            <h3 class="feature__title">URL 파라미터 기반 상세페이지</h3>
+            <p class="feature__desc">
+              <code>detail.html?id=1</code>이면 First Light, <code>?id=2</code>면
+              Rainy Sunday — 하나의 템플릿에서 URL 파라미터를 읽어 6개 제품 데이터를
+              동적으로 렌더링합니다. 제품번호·이름·향 계열·기억 카피·Top/Middle/Base
+              노트·태그가 모두 JS 데이터 객체에서 출력되고, 브레드크럼의 제품명·문서
+              타이틀(<code>document.title</code>)까지 함께 동기화됩니다.
+              <code>id</code> 파라미터가 없거나 잘못된 값이면 1번 상품(First Light)으로
+              대체되는 기본값 처리도 넣어, 잘못된 접근에서도 빈 화면 없이 항상
+              콘텐츠가 표시되도록 했습니다.
+            </p>
+            <div class="pattern-tags"><span class="pattern-tag">DATA-DRIVEN RENDERING</span></div>
+          </div>
+          <figure class="feature__media feature__media--compare">
+            <div class="feature__media-half">
+              <span class="compare-tag">?id=1</span>
+              <img src="images/detail-lume-f3-1.jpg" alt="detail.html?id=1 정보 패널 — First Light" class="feature__img"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="feature__placeholder" aria-hidden="true">?id=1 정보 패널 — First Light</span>
+            </div>
+            <div class="feature__media-half">
+              <span class="compare-tag">?id=2</span>
+              <img src="images/detail-lume-f3-2.jpg" alt="detail.html?id=2 정보 패널 — Rainy Sunday" class="feature__img"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="feature__placeholder" aria-hidden="true">?id=2 정보 패널 — Rainy Sunday</span>
+            </div>
+          </figure>
+        </article>
+        <article class="feature feature--reverse reveal">
+          <div class="feature__text">
+            <p class="feature__index">FEATURE 04</p>
+            <h3 class="feature__title">Scent Profile과 커머스 UI</h3>
+            <p class="feature__desc">
+              제품별 향의 성격을 5단계 dot indicator로 시각화하되, 카테고리 자체도
+              제품마다 다르게 매핑했습니다 — First Light는 Fresh·Floral·Woody, Midnight
+              Walk는 Spicy·Woody·Dark처럼 향의 인상에 맞춰 라벨과 강도가 함께 바뀝니다.
+              제품당 메인·서브 2장을 포함한 3장 이미지로 썸네일 갤러리 클릭 전환을 구현했고,
+              농도(EDP/EDT)·용량(30/50/100ml) 옵션 선택, 1~99 수량 조절까지 — 상품 탐색에서
+              구매 직전까지의 커머스 UI 흐름을 구현했습니다.
+            </p>
+            <div class="pattern-tags"><span class="pattern-tag">HOVER REVEAL</span><span class="pattern-tag">PRODUCT GRID</span></div>
+          </div>
+          <figure class="feature__media feature__media--video feature__media--square">
+            <video class="feature__img" src="images/detail-lume-f4.mp4" poster="images/detail-lume-f4.jpg"
+                   autoplay muted loop playsinline
+                   onloadeddata="this.nextElementSibling.classList.add('is-hidden')"
+                   onerror="this.classList.add('is-hidden')"></video>
+            <span class="feature__placeholder" aria-hidden="true">Scent Profile과 옵션 선택 UI (영상)</span>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== RESPONSIVE ===== -->
+    <section class="detail-responsive section" id="responsive">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">RESPONSIVE</p>
+          <h2 class="section__title">화면 폭에 따른 대응.</h2>
+        </header>
+
+        <div class="devices reveal">
+          <figure class="devices__item devices__item--desktop">
+            <div class="devices__screen">
+              <img src="images/detail-lume-desktop.jpg" alt="데스크톱 화면" class="devices__img"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="devices__placeholder" aria-hidden="true">데스크톱 화면</span>            </div>
+            <figcaption class="devices__label">DESKTOP</figcaption>
+          </figure>
+          <figure class="devices__item devices__item--tablet">
+            <div class="devices__screen">
+              <img src="images/detail-lume-tablet.jpg" alt="태블릿 화면" class="devices__img"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="devices__placeholder" aria-hidden="true">태블릿 화면</span>            </div>
+            <figcaption class="devices__label">TABLET · 900↓</figcaption>
+          </figure>
+          <figure class="devices__item devices__item--mobile">
+            <div class="devices__screen">
+              <img src="images/detail-lume-mobile.jpg" alt="모바일 화면" class="devices__img"
+                   onload="this.nextElementSibling.classList.add('is-hidden')"
+                       onerror="this.classList.add('is-hidden')" />
+                  <span class="devices__placeholder" aria-hidden="true">모바일 화면</span>            </div>
+            <figcaption class="devices__label">MOBILE</figcaption>
+          </figure>
+        </div>
+
+        <ul class="detail-responsive__notes reveal">
+          <li class="detail-responsive__note">컬렉션 그리드 — 데스크톱 6열 기준에서 1240px 이하 3열, 900px 이하 2열로 전환됩니다.</li><li class="detail-responsive__note">900px 이하에서는 Feature의 스크롤 진행률 연출을 끄고 세로 스택으로 전환하였습니다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== TROUBLESHOOTING LOG ===== -->
+    <section class="detail-trouble section section--tint" id="next-steps">
+      <div class="section__inner">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">TROUBLESHOOTING LOG</p>
+          <h2 class="section__title">발견한 문제, 이렇게 해결했습니다.</h2>
+        </header>
+        <p class="branding__intro reveal">
+          코드 리뷰를 이어가며 발견한 문제를 하나씩 고쳐온 기록입니다.
+        </p>
+
+        <ol class="commit-log reveal">
+          <li class="commit-log__item">
+            <div class="commit-log__connector"><span class="commit-log__dot" aria-hidden="true"></span></div>
+            <div class="commit-log__card">
+              <div class="commit-log__meta">
+                <span class="commit-log__badge">FIXED</span>
+                <span class="commit-log__id">ISSUE #01 · 모바일 Sticky 해제</span>
+              </div>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--found">발견</span>모바일에서 JS는 Feature 진행률 연출을 끄지만, CSS의 <code>height: 300vh</code>·sticky 구조가 완전히 해제되지 않아 첫 슬라이드만 보이거나 스크롤 공간이 남을 수 있었습니다. Notes 섹션 해제 코드에도 <code>#note</code> → <code>#notes</code> id 오타가 있었습니다.</p>
+              <p class="commit-log__why">비주얼 중심 페이지는 모바일에서 무너지면 바로 티가 납니다. 럭셔리 무드를 지키려면 모바일 안정성이 우선입니다.</p>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--fix">해결</span>900px 이하에서 #feature/#notes의 높이·sticky를 relative 스택으로 완전히 해제하고, id 오타(<code>#note</code> → <code>#notes</code>)도 함께 수정했습니다.</p>
+            </div>
+          </li>
+
+          <li class="commit-log__item">
+            <div class="commit-log__connector"><span class="commit-log__dot" aria-hidden="true"></span></div>
+            <div class="commit-log__card">
+              <div class="commit-log__meta">
+                <span class="commit-log__badge">FIXED</span>
+                <span class="commit-log__id">ISSUE #02 · 모바일 내비게이션 통일</span>
+              </div>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--found">발견</span>메인 페이지에는 햄버거 메뉴가 있는데 상세페이지 HTML에는 햄버거 버튼이 없었습니다 (CSS 스타일만 존재).</p>
+              <p class="commit-log__why">메인과 상세의 모바일 내비게이션이 다르면 완성도가 갑자기 떨어져 보입니다. 두 페이지의 nav 구조는 통일되어야 합니다.</p>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--fix">해결</span>상세페이지에도 동일한 햄버거 버튼과 토글 스크립트를 추가하고, <code>aria-expanded</code> 속성으로 열림 상태를 전달하도록 구현했습니다.</p>
+            </div>
+          </li>
+
+          <li class="commit-log__item">
+            <div class="commit-log__connector"><span class="commit-log__dot" aria-hidden="true"></span></div>
+            <div class="commit-log__card">
+              <div class="commit-log__meta">
+                <span class="commit-log__badge">FIXED</span>
+                <span class="commit-log__id">ISSUE #03 · 옵션별 가격 연동</span>
+              </div>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--found">발견</span>용량(30/50/100ml)이나 농도(EDP/EDT)를 바꿔도 가격이 ₩46,000으로 고정되어 있었고, 장바구니·바로 구매 버튼은 UI만 구현된 상태였습니다.</p>
+              <p class="commit-log__why">옵션이 가격에 반영되어야 실제 커머스처럼 읽히고, 담은 상품이 저장되어야 상세페이지의 흐름이 완결됩니다.</p>
+              <p class="commit-log__line"><span class="commit-log__tag commit-log__tag--fix">해결</span>용량·농도별 가격 테이블을 데이터에 추가해 선택 시 가격이 갱신되도록 했고, 장바구니 버튼은 제품 id·옵션·수량을 <code>localStorage</code>에 저장하도록 연결했습니다.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== PREV / NEXT ===== -->
+    <section class="detail-nav">
+      <div class="section__inner detail-nav__inner">
+        <a href="detail-library.html" class="detail-nav__link detail-nav__link--prev">
+          <span class="detail-nav__dir">← PREV</span>
+          <span class="detail-nav__name">별빛도서관</span>
+        </a>
+        <a href="index.html#project" class="detail-nav__all">ALL PROJECTS</a>
+        <a href="detail-bebe.html" class="detail-nav__link detail-nav__link--next">
+          <span class="detail-nav__dir">NEXT →</span>
+          <span class="detail-nav__name">BEBE DE PINO</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="detail-footer">
+    <p class="detail-footer__copy">© 2026 WON HYUNGYEONG. Designed &amp; Published by myself.</p>
+    <a href="#top" class="detail-footer__top">TOP ↑</a>
+  </footer>
+
+  <script src="js/script.js?v=4"></script>
+</body>
+</html>
